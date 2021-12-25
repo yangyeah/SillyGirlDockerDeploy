@@ -78,7 +78,7 @@ fi
 
 if [ ! -d $CODE_DIR/develop/onebyone/.git ]; then
   echo "扩展 一对一推送不存在，开始clone代码..."
-  git clone ${GITHUBPROXY}https://github.com/xumf/onebyone $CODE_DIR/develop/onebyone
+  git clone ${GITHUBPROXY}https://github.com/yangyeah/onebyone $CODE_DIR/develop/onebyone
 else
   echo "扩展 一对一推送已存在，开始更新代码..."
   cd $CODE_DIR/develop/onebyone && git reset --hard && git pull
